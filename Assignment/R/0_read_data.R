@@ -1,5 +1,4 @@
 
-
 # For large datasets, we'll use data.table:
 
 if(!require(data.table)){
@@ -34,4 +33,5 @@ prof <- data.table::fread("../Data/sweden_genealogy.csv", stringsAsFactors = F) 
   # but transform to data.frame since data.table objects obey different rules in R:
   data.frame
 
+# To get a sense of the structure of the data:
 glimpse(prof)
