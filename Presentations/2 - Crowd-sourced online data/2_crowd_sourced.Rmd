@@ -1,0 +1,80 @@
+---
+title: "2 - Crowd-sourced online data"
+author: | 
+  | Diego Alburez-Gutierrez
+  | MPIDR
+  | European Doctoral School of Demography 2019-20
+date: "31/03/2020"
+output: 
+   beamer_presentation:
+      includes:
+         in_header: header_pagenrs.tex
+  
+---
+
+
+## Agenda
+
+# Crowd-sourced data
+
+# Online genealogies
+
+## Familinx data
+
+\tiny Kaplanis, J., et al. (2018). Quantitative analysis of population-scale family trees with millions of relatives. Science 360(6385):171–175.
+
+## The data generating process
+
+![Power law function of genealogists](resources/profiles_created){width=250px}
+
+\tiny Diego Alburez-Gutierrez (2020)
+
+## A closer look at the data generating process
+
+![The crowd-sourcers, median age: 65](resources/profiles_created){width=250px}
+
+\tiny https://blog.myheritage.com/2019/09/myheritage-live-2019-recap/
+
+## Exploring Famlinx
+
+``` {r, include = T, warning = F, message = F}
+
+library(data.table)
+library(tidyverse)
+library(knitr)
+
+# Read sample Familinx data using data.table
+fread("../../Assignment/Data/sweden_genealogy.csv") %>% 
+  # To get a sense of the structure of the data:
+  select(profileid, father, mother, birth_year, death_year) %>% 
+  slice(1:4) %>% 
+  kable()
+
+```
+
+## The Swedish sample
+
+![Subseting a genealogical network](resources/swe_net){width=250px}
+
+\tiny Diego Alburez-Gutierrez and Samin Aref (2020)
+
+## Geographic distribution in Familinx
+
+![Birth events worldwide](resources/birth_map.png){width=250px}
+
+\tiny Diego Alburez-Gutierrez (2020)
+
+## Geographic distribution in our sample
+
+![Birth events in Sweden over time](resources/birth_map_swe){width=250px}
+
+\tiny Diego Alburez-Gutierrez (2020)
+
+## Assignment
+
+- Questions about instructions
+- Issues with Familinx data
+
+## Suggested homework activity
+
+- Try out the `Exercise 1` from the final assignement 

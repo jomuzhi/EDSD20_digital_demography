@@ -1,0 +1,24 @@
+---
+title: "4 - Computational approaches"
+author: | 
+  | Diego Alburez-Gutierrez
+  | MPIDR
+  | European Doctoral School of Demography 2019-20
+date: "02/04/2020"
+output: 
+   beamer_presentation:
+      includes:
+         in_header: header_pagenrs.tex
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Agenda
+
+
+
+## Homework
+

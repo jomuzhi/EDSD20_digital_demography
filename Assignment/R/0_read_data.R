@@ -34,4 +34,4 @@ prof <- data.table::fread("../Data/sweden_genealogy.csv", stringsAsFactors = F) 
   data.frame
 
 # To get a sense of the structure of the data:
-glimpse(prof)
+head(prof)

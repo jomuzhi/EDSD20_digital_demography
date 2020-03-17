@@ -5,9 +5,11 @@ author: |
   | MPIDR
   | European Doctoral School of Demography 2019-20
 date: "30/03/2020"
-output: beamer_presentation
-header-includes:
-- \titlegraphic{\centering \includegraphics[width=5cm]{mpidr_logo_dag.pdf}}
+output: 
+   beamer_presentation:
+      includes:
+         in_header: header_pagenrs.tex
+  
 ---
 
 ```{r setup, include=FALSE}
@@ -25,7 +27,9 @@ options(tinytex.verbose = TRUE)
 
 ## Hello from the Lab of Digital and Computational Demography!
 
-![DiCoDe](resources/lab.jpg){width=350px}
+![DiCoDe](resources/lab.jpg){width=300px}
+
+\tiny https://www.demogr.mpg.de/en/research_6120/digital_and_computational_demography_5555
 
 # Course setup
 
@@ -127,7 +131,7 @@ Assignments due Friday April 3 at midnight (CET):
 1. Understand and adress online bias
 1. Nowcast demographic processes
 
-## Big Data, Big Bias?
+## 1. Big Data, Big Bias?
 
 ![Looks a bit odd?](resources/pyramid.PNG){width=250px}
 
@@ -139,7 +143,7 @@ Assignments due Friday April 3 at midnight (CET):
 1.  Track inequalities in online access
 1.  Consequences of platform use for users
 
-## The digital gender gap
+## 2. The digital gender gap
 
 ![Inequalities in digital access](resources/gender_gap.PNG){width=350px}
 
@@ -153,7 +157,7 @@ Assignments due Friday April 3 at midnight (CET):
 1.  Cultural assimilation of inmigrants
 
 
-## Quantifying international migration
+## 3. Quantifying international migration
 
 ![](resources/plos.PNG){width=350px}
 
@@ -167,7 +171,7 @@ Assignments due Friday April 3 at midnight (CET):
 1.  Enhanced data collection with IOT and online surveys
 1.  Morbidity from online behaviour (digital traces)
 
-## Long-term mortality patters
+## 4. Long-term mortality patters
 
 ![](resources/geni.PNG){width=350px}
 
@@ -188,6 +192,6 @@ Assignments due Friday April 3 at midnight (CET):
 
 ## Homework
 
-- Download Familinx sample data for Sweden: https://github.com/alburezg/EDSD20_digital_demography/tree/master/Assignment
-- Use the script in the `Assignment/R` directory to load it in your R global environment
-- Review the assignement instructions in the syllabus
+1. Download Familinx sample data for Sweden: https://github.com/alburezg/EDSD20_digital_demography/tree/master/Assignment
+1. Use the script in the `Assignment/R` directory to load it in your R global environment
+1. Review the assignement instructions in the syllabus
