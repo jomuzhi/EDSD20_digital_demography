@@ -1,0 +1,193 @@
+---
+title: "1 - Introduction to Digital Demography"
+author: | 
+  | Diego Alburez-Gutierrez
+  | MPIDR
+  | European Doctoral School of Demography 2019-20
+date: "30/03/2020"
+output: beamer_presentation
+header-includes:
+- \titlegraphic{\centering \includegraphics[width=5cm]{mpidr_logo_dag.pdf}}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+options(tinytex.verbose = TRUE)
+```
+
+## Agenda
+
+1. Course setup and final assignment
+1. Introduction to digital demography
+1. Data and approaches
+1. Current topics
+
+
+## Hello from the Lab of Digital and Computational Demography!
+
+![DiCoDe](resources/lab.jpg){width=350px}
+
+# Course setup
+
+## Week's schedule
+
+- Monday 11:30-13.00 - “Introduction to digital demography”
+- Tuesday 11:30-13.00 - “Crowd-sourced online data” 
+- Wednesday 11:30-13.00 -  “Digital trace data”
+- Thursday 15:00-17.00  - “Computational approaches”
+- Friday - No class
+
+## Technical setup
+
+- Online lectures, whenever possible at: 
+   + https://meet.jit.si/EDSD20_digital_demography
+- Course materials (syllabus, presentations, readings, assignment)
+   + https://github.com/alburezg/EDSD20_digital_demography
+- Requirements
+   + Running installation of RStudio
+   + packages: 'tidyverse', 'data.table'
+
+## Final assignment
+
+**Goal**
+
+- Hands-on experience using crowd-sourced digital data. 
+- Sample of Familinx database: user-generated genealogical records  
+
+**Exercises**
+
+1. Compute: historical lifespan in Sweden
+1. Discuss: lifespan and life expectancy
+1. Evaluate: bias in the online genealogies
+
+*See full instructions in syllabus!*
+
+
+## Evaluation
+
+Assignments due Friday April 3 at midnight (CET): 
+
+1. A written report (Word document of pdf file). 
+1. The R scripts used to produce the empirical results. 
+
+*See full instructions in syllabus!*
+
+
+# Introduction to Digital Demography
+
+## What is 'digital' demography?
+
+- Digital vs analogue
+- Online vs offline
+- 'Big' vs 'small' data
+
+![](resources/alburez.PNG){width=375px}
+
+## Digital data sources for demographic research
+
+
+1. Crowd-sourced online data 
+1. Digital Trace Data (online and offline)
+1. Simulations (made-up data)
+
+
+## 'Big data' is not new data
+
+![Demographer collecting Big Data for the 1925 US census](resources/census.jpg){width=250px}
+
+\tiny https://commons.wikimedia.org/wiki/File:Volkstelling_1925_Census.jpg   
+
+
+## Pioneering work
+
+
+![Using email data](resources/email.PNG){width=350px}
+
+\tiny Zagheni, E. and Weber, I. (2012). You are where you e-mail: Using e-mail data to estimate international migration rates. 3rd Annual ACM Web Science Conference.
+
+
+## International migration
+
+![Conditional probabilities of migration using IP data](resources/ip-adress.png){width=250px}
+
+\tiny Bogdan State, Ingmar Weber, and Emilio Zagheni. 2013. Studying inter-national mobility through IP geolocation. In Proceedings of the sixth ACM international conference on Web search and data mining (WSDM ’13).
+
+## Current topics in digital demography
+
+1. Methological developments
+2. Understand internet users and online use
+3. Migration (internal and external)
+4. Mortality and morbidity
+5. Online and offline fertility dynamics
+
+
+## 1. Methological developments
+
+1. Inference from non-representative samples
+1. Understand and adress online bias
+1. Nowcast demographic processes
+
+## Big Data, Big Bias?
+
+![Looks a bit odd?](resources/pyramid.PNG){width=250px}
+
+\tiny Zagheni, E., Garimella, V.R.K., Weber, I., and State, B. (2014). Inferring international and internal migration patterns from Twitter data. Paper presented at the 23rd International Conference
+
+## 2. Understand internet users and online use
+
+1.  Infer demographics (age, sex, location, SE status, etc) from image and text
+1.  Track inequalities in online access
+1.  Consequences of platform use for users
+
+## The digital gender gap
+
+![Inequalities in digital access](resources/gender_gap.PNG){width=350px}
+
+\tiny Fatehkia, M., Kashyap, R., and Weber, I. (2018). Using Facebook ad data to track the global digital gender gap. World Development 107:189–209.
+
+
+## 3. Migration (internal and external)
+
+1.  Estimate flows and stocks
+1.  Mobility by subgroup (eg. undocumented, highly-skilled)
+1.  Cultural assimilation of inmigrants
+
+
+## Quantifying international migration
+
+![](resources/plos.PNG){width=350px}
+
+\tiny Spyratos, S., Vespe, M., Natale, F., Weber, I., Zagheni, E., and Rango, M. (2019). Quantifying international human mobility patterns using Facebook Network data. PLOS ONE 14(10):e0224134. doi:10.1371/journal.pone.0224134.
+
+
+
+## 4. Mortality and morbidity
+
+1.  "Historical" mortality estimates (obituaries, genealogies)
+1.  Enhanced data collection with IOT and online surveys
+1.  Morbidity from online behaviour (digital traces)
+
+## Long-term mortality patters
+
+![](resources/geni.PNG){width=350px}
+
+\tiny Kaplanis, J., et al. (2018). Quantitative analysis of population-scale family trees with millions of relatives. Science 360(6385):171–175.
+
+
+## 5. Online and offline fertility dynamics
+
+1. Estimate fertility from friendship networks
+1. Online discourse around reproduction 
+1. Partnership formation and assortative mating (online dating)
+
+## Estimating male fertility from FB
+
+![](resources/rampazzo.PNG){width=350px}
+
+\tiny Rampazzo, F., et al.(2018). Mater certa est, pater numquam: What can Facebook Advertising Data Tell Us about Male Fertility Rates? arXiv:1804.04632.
+
+## Homework
+
+- Download Familinx sample data for Sweden: https://github.com/alburezg/EDSD20_digital_demography/tree/master/Assignment
+- Use the script in the `Assignment/R` directory to load it in your R global environment
+- Review the assignement instructions in the syllabus

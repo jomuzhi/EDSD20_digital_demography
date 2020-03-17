@@ -1,0 +1,113 @@
+%% 
+%% This is file 'beamerouterthemeMPIDR.sty'
+%% 
+%% by Eric Naujoks
+%%
+%% Problems, bugs and comments to 
+%% naujoks@demogr.mpg.de
+%%
+
+
+\ProvidesPackage{./mpidr/beamerouterthemeMPIDR}
+
+
+%%%	counter for headers:
+%%%	====================
+\newcount\he@dmode \he@dmode0
+\DeclareOptionBeamer{NavigationOff}{\def\he@dmode{0}\setbeamersize{text margin left=27.6mm, text margin right=17.5mm}}
+\DeclareOptionBeamer{NavigationOn}{\def\he@dmode{1}\setbeamersize{text margin left=17.5mm, text margin right=17.5mm}}
+
+\ExecuteOptionsBeamer{NavigationOff}
+\ProcessOptionsBeamer\relax
+
+\mode<presentation>
+
+
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamercolor{background canvas}{bg=colorframe}
+
+
+
+\newcommand{\mylogo}{}
+
+
+\def\ifUnDefinedCs#1{\expandafter\ifx\csname#1\endcsname\relax}
+
+% header:
+\defbeamertemplate*{headline}{mpidr}%
+{
+	\ifUnDefinedCs{inserttitle}\def\inserttitle{}\fi%
+	\ifUnDefinedCs{insertframetitle}\def\insertframetitle{}\fi%
+	\ifUnDefinedCs{insertframesubtitle}\def\insertframesubtitle{}\fi%
+	\raggedleft
+	\ifcase\he@dmode			%%	OneAuthorNavigationOff
+		\begin{beamercolorbox}[wd=\paperwidth,dp=.55in,left]{palette quaternary}
+			\begin{tabular}{l@{\hspace{0.4in}}l}
+				\\[.04in]
+				\begin{minipage}[c][][c]{0.6in}
+					\hspace*{.12in}\includegraphics[height=.6in]{mpidr_logo_colour_en_solo}
+				\end{minipage}
+				&
+					\raise-4pt\hbox{\usebeamerfont{sectioninhead}\insertframetitle}
+			\end{tabular}
+		\end{beamercolorbox}
+	\or										%%	OneAuthorNavigationOn
+		\begin{beamercolorbox}[colsep=1.5pt]{upper separation line head}
+		\end{beamercolorbox}
+		\begin{beamercolorbox}{palette tertiary}
+			\vskip2pt\hspace*{15mm}\insertnavigation{.885\paperwidth}\vskip2pt
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[colsep=1.5pt]{middle separation line head}
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[ht=1.5ex,dp=1.125ex,%
+		leftskip=17.5mm,rightskip=17.5mm,left]{palette tertiary}
+			\hspace*{17.5mm}\usebeamerfont{subsection in head/foot}\insertsubsectionhead
+		\end{beamercolorbox}
+		\vskip3em
+		\begin{beamercolorbox}[ht=1.5ex,dp=1.125ex,%
+		leftskip=17.5mm,rightskip=17.5mm,left]{palette primary}
+			\hspace*{17.5mm}\usebeamerfont{sectioninhead}\insertframetitle
+		\end{beamercolorbox}
+	\fi
+}
+
+
+% Hintergrund: blauer Rahmen
+\defbeamertemplate*{background}{mpidr}
+{
+}
+
+% Fusszeile
+\defbeamertemplate*{footline}{mpidr}%
+{
+	\ifcase\he@dmode			%%	OneAuthorNavigationOff
+		\begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,right, rightskip=17.5mm]{palette quaternary}
+			\insertshortauthor~~\insertshortinstitute\hspace*{2em}
+			\insertshorttitle\hspace*{2em}
+			\insertshortdate{}\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=17.5mm,rightskip=.3cm plus1fil]{palette quaternary inverted}
+			\hfill
+		\end{beamercolorbox}
+	\or										%%	OneAuthorNavigationOn
+		\begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,right, rightskip=17.5mm]{palette quaternary}
+			\insertshortauthor~~\insertshortinstitute\hspace*{2em}
+			\insertshorttitle\hspace*{2em}
+			\insertshortdate{}\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=17.5mm,rightskip=.3cm plus1fil]{palette quaternary inverted}
+			\includegraphics[height=1.5cm]{mpidr_logo_colour_en_solo}
+			\hfill
+		\end{beamercolorbox}
+	\fi
+}
+
+
+
+
+\mode
+<all>
