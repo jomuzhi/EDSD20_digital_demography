@@ -47,9 +47,11 @@ options(tinytex.verbose = TRUE)
    + https://meet.jit.si/EDSD20_digital_demography
 - Course materials (syllabus, presentations, readings, assignment)
    + https://github.com/alburezg/EDSD20_digital_demography
+   + Download complete repository
 - Requirements
    + Running installation of RStudio
-   + packages: 'tidyverse', 'data.table'
+   + packages: 'tidyverse', 'data.table', 'knitr', 'rmarkdown'
+   + Miktex, Texlive or RStudio's 'tinytex'
 
 ## Final assignment
 
@@ -71,8 +73,9 @@ options(tinytex.verbose = TRUE)
 
 Assignments due Friday April 3 at midnight (CET): 
 
-1. A written report (Word document of pdf file). 
-1. The R scripts used to produce the empirical results. 
+1. A written Rmarkdown report (Word document of pdf file). 
+1. Include R code as inline chunks
+1. Introduction to Rmarkdown: https://rmarkdown.rstudio.com/lesson-1.html
 
 *See full instructions in syllabus!*
 
