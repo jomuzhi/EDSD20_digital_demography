@@ -38,7 +38,7 @@ options(tinytex.verbose = TRUE)
 - Monday 11:30-13.00 - “Introduction to digital demography”
 - Tuesday 11:30-13.00 - “Crowd-sourced online data” 
 - Wednesday 11:30-13.00 -  “Digital trace data”
-- Thursday 15:00-17.00  - “Computational approaches”
+- Thursday 11:30-13.00  - “Computational approaches”
 - Friday - No class
 
 ## Technical setup
@@ -195,6 +195,7 @@ Assignments due Friday April 3 at midnight (CET):
 
 ## Homework
 
-1. Download Familinx sample data for Sweden: https://github.com/alburezg/EDSD20_digital_demography/tree/master/Assignment
-1. Use the script in the `Assignment/R` directory to load it in your R global environment
+
+1. Download the course materials from https://github.com/alburezg/EDSD20_digital_demography
+1. Use the script in the `Assignment/R` directory to knit an Rmarkdown document
 1. Review the assignement instructions in the syllabus

@@ -15,6 +15,18 @@ output:
 
 ## Agenda
 
+1. Q&A
+1. Crowd-sourced data
+1. User-generated family trees
+1. Limitations and bias
+
+## Q&A
+
+- Download the course materials
+- Knit an Rmarkdown document
+- Review the assignement instructions
+- Other?
+
 # Crowd-sourced data
 
 ## What is crowd-sourced data?
@@ -196,11 +208,8 @@ non-representative polls. International Journal of Forecasting, 31(3), 980-991.
 
 \tiny Diego Alburez-Gutierrez and Emanuele del Fava (2020)
 
-## Assignment
+## Suggested homework
 
-- Questions about instructions
-- Issues with Familinx data
-
-## Suggested homework activity
-
-- Try out the `Exercise 1` from the final assignement 
+- Read Sofia Gil’s tutorial on using the FB Marketing API: https://github.com/SofiaG1l/Using_Facebook_API
+- Explore website: https://www.digitalgendergaps.org/data/?report=2020-03-02
+- Start working on `Exercise 1` from the final assignement 

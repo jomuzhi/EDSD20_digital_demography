@@ -14,11 +14,139 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(tufte)
 ```
 
 ## Agenda
 
+1. Q&A
+1. Introduction to digital trace and marketing data
+1. Example 1: Migration
+1. Example 2: Internet users
+1. Discussion
+
+## Q&A
+
+- Questions about on `Exercise 1` from the final assignement 
+- Issues with Familinx data
+- Other?
+
+## Digital traces are incidental to our online presence
+
+- Digital breadcrumbs are unavoidable 
+- Pre-GDPR, largely unchecked
+- Marketing-led
+- Not collected for social-scientific research
+
+## Some data sources
+
+- Marketing platforms
+   + Facebook/Instagram/WhatsApp API
+   + Linkedin API
+- Online platforms and communication
+   + Twitter (API)
+   + Google Trends
+   + Email, IP address, mobile phones
+- Internet of Things
+   + Activity trackers and wearables medical devices
+   + Wearable sensors (see Cito Cattuto)
+
+## Facebook marketing platforms and APIs
+
+- Sofia Gil’s tutorial: https://github.com/SofiaG1l/Using_Facebook_API
+- For python users: https://github.com/carolcoimbra/facebook-ads
+
+## Using online marketing tools for demographic research
+
+![](resources/fb.png){width=350px}
+
+## ‘Audience estimates’: FB users in Guatemala
+
+![](resources/fb1.png){width=350px}
+
+## Male FB users, aged 18+ in Guatemala City
+
+![](resources/fb2.png){width=350px}
+
+## Female FB users, aged 18+ in Guatemala City
+
+![](resources/fb3.png){width=350px}
+
+## Substantive areas of interest
+
+# Example 1: Migration
+
+## Research at a glance
+
+- Data
+- Analysis
+- Findings
+
+\tiny Alexander, M., Polimis, K. and Zagheni, E. (2019), The Impact of Hurricane Maria on Out‐migration from Puerto Rico: Evidence from Facebook Data. Population and Development Review, 45: 617-630.
+
+
+## Sanity checks
+
+![](resources/alex1.png){width=350px}
+
+\tiny Alexander, M., Polimis, K. and Zagheni, E. (2019), The Impact of Hurricane Maria on Out‐migration from Puerto Rico: Evidence from Facebook Data. Population and Development Review, 45: 617-630.
+
+## Population increase
+
+![](resources/alex2.png){width=350px}
+
+\tiny Alexander, M., Polimis, K. and Zagheni, E. (2019), The Impact of Hurricane Maria on Out‐migration from Puerto Rico: Evidence from Facebook Data. Population and Development Review, 45: 617-630.
+
+
+# Example 2: Digital use
+
+## Summary
+
+- Data
+- Analysis
+- Findings
+
+## Gender gap
+
+$$\text{Facebook Gender Gap Index} = \frac{ \text{Female to male gender ratio of people with characteristic} }{\text{Female to Male gender ratio of the population }}$$
+
+
+\tiny Fatehkia, M., Kashyap, R., and Weber, I. (2018). Using Facebook ad data to track the global digital gender gap. World Development 107:189–209.
+
+## Use of digital trace data
+
+- Strengths
+   + Now-casting: https://www.digitalgendergaps.org/data/?report=2020-03-02
+- Weaknesses
+
+# Discussion
+
+## Strengths and weaknesses of digital trace data
+
+- Puerto Rico migration
+   + Pro: Speed
+   + Pro: Some comparison to ground-truth possible
+   - Con: Non-representative sample
+    
+- Digital access
+   + Pro: Nowcasting (https://www.digitalgendergaps.org/data/?report=2020-03-02) 
+   + Pro: Population-level analysis (?)
+   + Con: No 'ground-truth' data
+
+
+## Challenges going ahead
+
+> Whoever you are… I've always depended on the kindness of strangers.
+
+`r tufte::quote_footer('--- Blanche DuBois, A Streetcar Named Desire')`
+
+1. Ensuring sustainable data access
+1. Addressing systematic bias
+1. Conducting ethical online research
+
+\tiny Zuboff, S. (2015). Big other: Surveillance capitalism and the prospects of an information civilization. Journal of Information Technology 30(1):75–89.
 
 
 ## Homework
 
+- Start with `Exercise 2`
