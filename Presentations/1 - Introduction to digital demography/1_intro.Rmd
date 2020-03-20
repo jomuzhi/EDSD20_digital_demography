@@ -43,8 +43,9 @@ options(tinytex.verbose = TRUE)
 
 ## Technical setup
 
-- Online lectures, whenever possible at: 
-   + https://meet.jit.si/EDSD20_digital_demography
+- Online lectures 
+   + Add me in Skype: diego.alburez
+   + online office hours
 - Course materials (syllabus, presentations, readings, assignment)
    + https://github.com/alburezg/EDSD20_digital_demography
    + Download complete repository
@@ -197,5 +198,5 @@ Assignments due Friday April 3 at midnight (CET):
 
 
 1. Download the course materials from https://github.com/alburezg/EDSD20_digital_demography
-1. Use the script in the `Assignment/R` directory to knit an Rmarkdown document
-1. Review the assignement instructions in the syllabus
+2. Use the script in the `Assignment/R` directory to knit an Rmarkdown document
+3. Review the assignment instructions in the syllabus

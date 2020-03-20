@@ -212,4 +212,4 @@ non-representative polls. International Journal of Forecasting, 31(3), 980-991.
 
 - Read Sofia Gil’s tutorial on using the FB Marketing API: https://github.com/SofiaG1l/Using_Facebook_API
 - Explore website: https://www.digitalgendergaps.org/data/?report=2020-03-02
-- Start working on `Exercise 1` from the final assignement 
+- Start working on `Exercise 1` from the final assignment 

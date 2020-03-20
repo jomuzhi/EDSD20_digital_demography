@@ -37,7 +37,8 @@ library(tidyverse)
 # Kaplanis, J., et al. (2018). Quantitative analysis of population-scale family 
 # trees with millions of relatives. Science 360(6385):171–175.
 
-# Load using data.table:
+# Load using data.table and then converto to data.frame
+# Make sure that getwd() is the directory where this script is stored
 prof <- data.table::fread("../Data/sweden_genealogy.csv", stringsAsFactors = F) %>% 
   data.frame
 
@@ -66,7 +67,7 @@ What is the difference between lifespan and life expectancy? The two readings fr
 
 2. Is it possible to evaluate this empirically using data from online genealogies? Write a short paragraph (max 250 words) indicating how you would do it
 
-3. For extra points, compute the cohort life expectancy for any given birth cohort using the genealogies
+3. For extra points, compute the cohort life expectancy for any given birth cohort using the genealogies (optional)
 
 
 \clearpage

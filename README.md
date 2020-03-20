@@ -4,7 +4,7 @@ In this repo you will find all the materials needed to complete this week's cour
 
 ## Online lectures
 
-All lectures will be live-streamed from: https://meet.jit.si/EDSD20_digital_demography, whenever possible. Students are expected to attend all sessions remotely. 
+All lectures will be in Skype (please make sure to add me: diego.alburez). Students are expected to attend all sessions remotely. 
 Please get in touch with the course conveyor in advance if you anticipate issues with this.
 
 Best of luck!

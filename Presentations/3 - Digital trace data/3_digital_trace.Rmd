@@ -54,23 +54,23 @@ library(tufte)
 ## Facebook marketing platforms and APIs
 
 - Sofia Gil’s tutorial: https://github.com/SofiaG1l/Using_Facebook_API
-- For python users: https://github.com/carolcoimbra/facebook-ads
+- For python users, Carol Coimbra's: https://github.com/carolcoimbra/facebook-ads
 
 ## Using online marketing tools for demographic research
 
-![](resources/fb.png){width=350px}
+![](resources/fb.png){width=400px}
 
 ## ‘Audience estimates’: FB users in Guatemala
 
-![](resources/fb1.png){width=350px}
+![](resources/fb1.png){width=400px}
 
 ## Male FB users, aged 18+ in Guatemala City
 
-![](resources/fb2.png){width=350px}
+![](resources/fb2.png){width=400px}
 
 ## Female FB users, aged 18+ in Guatemala City
 
-![](resources/fb3.png){width=350px}
+![](resources/fb3.png){width=400px}
 
 ## Substantive areas of interest
 
@@ -78,9 +78,9 @@ library(tufte)
 
 ## Research at a glance
 
-- Data
-- Analysis
-- Findings
+- RQ: Estimate out-migration from Puerto Rico in the months after 2017 Hurricane Maria
+- Data: FB advertising platform and American Community Survey (ACS)
+- Findings: Flows by age, sex, and US State
 
 \tiny Alexander, M., Polimis, K. and Zagheni, E. (2019), The Impact of Hurricane Maria on Out‐migration from Puerto Rico: Evidence from Facebook Data. Population and Development Review, 45: 617-630.
 
@@ -97,42 +97,51 @@ library(tufte)
 
 \tiny Alexander, M., Polimis, K. and Zagheni, E. (2019), The Impact of Hurricane Maria on Out‐migration from Puerto Rico: Evidence from Facebook Data. Population and Development Review, 45: 617-630.
 
+## Percent change by age groups
+
+![](resources/alex3.png){width=350px}
+
+\tiny Alexander, M., Polimis, K. and Zagheni, E. (2019), The Impact of Hurricane Maria on Out‐migration from Puerto Rico: Evidence from Facebook Data. Population and Development Review, 45: 617-630.
 
 # Example 2: Digital use
 
 ## Summary
 
-- Data
-- Analysis
-- Findings
+- RQ: Predict internet and mobile phone use gender gaps 
+- Data: FB advertising platform and indicators from offline sources
+- Estimating rates: Facebook Gender Gap Index:
 
-## Gender gap
+$$\frac{ \text{Female to male gender ratio of people with characteristic} }{\text{Female to Male gender ratio of the population }}$$
 
-$$\text{Facebook Gender Gap Index} = \frac{ \text{Female to male gender ratio of people with characteristic} }{\text{Female to Male gender ratio of the population }}$$
+- Findings: 
+   + Facebook-based measure performed well compared to ground truth
+   + Online+offline measure: best estimates
 
 
 \tiny Fatehkia, M., Kashyap, R., and Weber, I. (2018). Using Facebook ad data to track the global digital gender gap. World Development 107:189–209.
 
-## Use of digital trace data
 
-- Strengths
-   + Now-casting: https://www.digitalgendergaps.org/data/?report=2020-03-02
-- Weaknesses
+## Measuring the gender gap in real-time
+
+![](resources/gap.png){width=400px}
+
+\tiny https://www.digitalgendergaps.org/data/?report=2020-03-02
 
 # Discussion
 
 ## Strengths and weaknesses of digital trace data
 
 - Puerto Rico migration
-   + Pro: Speed
-   + Pro: Some comparison to ground-truth possible
-   - Con: Non-representative sample
+   + Pro: Real-time data
+   + Con: No 'ground-truth' data (?)
+   - Con: Non-representative sample based on unknown algorithms
+   + Pro: Difference-in-difference to adjust for bias 
     
-- Digital access
+- Digital gender gap
    + Pro: Nowcasting (https://www.digitalgendergaps.org/data/?report=2020-03-02) 
-   + Pro: Population-level analysis (?)
-   + Con: No 'ground-truth' data
-
+   + Pro: Ideal data for the job?
+   + Pro: 'Ground-truth' data: Internet Gender Gap Index
+   + Con: Rates are unadjusted - what is the data representative of? 
 
 ## Challenges going ahead
 
@@ -142,7 +151,8 @@ $$\text{Facebook Gender Gap Index} = \frac{ \text{Female to male gender ratio of
 
 1. Ensuring sustainable data access
 1. Addressing systematic bias
-1. Conducting ethical online research
+1. No information information about algorithms that companies use internally (eg. rounding errors)
+1. Privacy and ethical digital research
 
 \tiny Zuboff, S. (2015). Big other: Surveillance capitalism and the prospects of an information civilization. Journal of Information Technology 30(1):75–89.
 
