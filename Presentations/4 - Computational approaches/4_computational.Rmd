@@ -82,25 +82,25 @@ read.csv("../../Assignment/Data/sweden_socsim.csv") %>%
    + increase in double orphans with no living grandparents
    + shift of responsibilities to aunts and uncles
 
-\tiny{Zagheni, E. 2011. The impact of the HIV/AIDS epidemic on kinship resources for orphans in Zimbabwe, \textit{Population and Development Review} 74(4), 761-783.}
+\tiny{Zagheni, E. 2011. The impact of the HIV/AIDS epidemic on kinship resources for orphans in Zimbabwe, Population and Development Review 74(4), 761-783.}
 
 ## Double-orhpans and wouble-orhpans without granparents
 
 ![](resources/zagheni_orphans.PNG){width=350px}
 
-\tiny{Zagheni, E. 2011. The impact of the HIV/AIDS epidemic on kinship resources for orphans in Zimbabwe, \textit{Population and Development Review} 74(4), 761-783.}
+\tiny{Zagheni, E. 2011. The impact of the HIV/AIDS epidemic on kinship resources for orphans in Zimbabwe, Population and Development Review 74(4), 761-783.}
 
 ## Percent of double orphans
 
 ![](resources/zag4.PNG){width=350px}
 
-\tiny{Zagheni, E. 2011. The impact of the HIV/AIDS epidemic on kinship resources for orphans in Zimbabwe, \textit{Population and Development Review} 74(4), 761-783.}
+\tiny{Zagheni, E. 2011. The impact of the HIV/AIDS epidemic on kinship resources for orphans in Zimbabwe, Population and Development Review 74(4), 761-783.}
 
 ## Availability of aunts and uncles
 
 ![](resources/zag3.PNG){width=350px}
 
-\tiny{Zagheni, E. 2011. The impact of the HIV/AIDS epidemic on kinship resources for orphans in Zimbabwe, \textit{Population and Development Review} 74(4), 761-783.}
+\tiny{Zagheni, E. 2011. The impact of the HIV/AIDS epidemic on kinship resources for orphans in Zimbabwe, Population and Development Review 74(4), 761-783.}
 
 # Example 2: Projecting older adults without kin
 
@@ -161,9 +161,8 @@ read.csv("../../Assignment/Data/sweden_socsim.csv") %>%
 
 ![Expected number of child deaths in Sweden](resources/comparative){width=350px}
 
-# Conclusion
-
 ## Wrapping up
 
+- How does this relate to your interests?
 - Final thoughts?
 - Project ideas?

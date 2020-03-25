@@ -45,7 +45,7 @@ options(tinytex.verbose = TRUE)
 
 - Online lectures 
    + Add me in Skype: diego.alburez
-   + online office hours
+   + Online office hours
 - Course materials (syllabus, presentations, readings, assignment)
    + https://github.com/alburezg/EDSD20_digital_demography
    + Download complete repository
@@ -175,7 +175,7 @@ Assignments due Friday April 3 at midnight (CET):
 1.  Enhanced data collection with IOT and online surveys
 1.  Morbidity from online behaviour (digital traces)
 
-## 4. Long-term mortality patters
+## 4. Long-term mortality patterns
 
 ![](resources/geni.PNG){width=350px}
 

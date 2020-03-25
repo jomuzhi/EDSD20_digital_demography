@@ -72,8 +72,6 @@ library(tufte)
 
 ![](resources/fb3.png){width=400px}
 
-## Substantive areas of interest
-
 # Example 1: Migration
 
 ## Research at a glance
@@ -160,3 +158,4 @@ $$\frac{ \text{Female to male gender ratio of people with characteristic} }{\tex
 ## Homework
 
 - Start with `Exercise 2`
+- Think for tomorrow: How does this relate to your interests (if at all)?
