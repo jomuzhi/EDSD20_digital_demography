@@ -122,17 +122,17 @@ Assignments due Friday April 3 at midnight (CET):
 
 ## Current topics in digital demography
 
-1. Methological developments
+1. Methodological developments
 2. Understand internet users and online use
 3. Migration (internal and external)
 4. Mortality and morbidity
 5. Online and offline fertility dynamics
 
 
-## 1. Methological developments
+## 1. Methodological developments
 
 1. Inference from non-representative samples
-1. Understand and adress online bias
+1. Understand and address online bias
 1. Nowcast demographic processes
 
 ## 1. Big Data, Big Bias?
@@ -158,7 +158,7 @@ Assignments due Friday April 3 at midnight (CET):
 
 1.  Estimate flows and stocks
 1.  Mobility by subgroup (eg. undocumented, highly-skilled)
-1.  Cultural assimilation of inmigrants
+1.  Cultural assimilation of immigrants
 
 
 ## 3. Quantifying international migration

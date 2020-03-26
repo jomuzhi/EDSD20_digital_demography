@@ -20,7 +20,7 @@ library(tidyverse); library(knitr)
 ## Agenda
 
 1. Q&A
-1. Demographic microsimulation
+1. Demographic micro simulation
 1. Example 1: Impact of the HIV/AIDS epidemic on kinship resources
 1. Example 2: Projecting older adults without kin
 1. Discussion
@@ -28,15 +28,19 @@ library(tidyverse); library(knitr)
 ## Q&A
 
 - Previous days
-- Questions about final assignement 
+- Questions about final assignment 
 - Other?
 
-## Demographic microsimulation
+## Demographic micro-simulation
 
-- Model individual-level demographic behaviour behaviour applying set of rules
+- Model individual-level demographic behaviour applying set of rules
 - Make up data where unavailable
 - Science: compare to independent method
-- SOCSIM: Other types of simulation: Agent-based modelling, CAMSIM, etc.
+- Different alternatives:
+   + SOCSIM
+   + CAMSIM
+   + NetLogo (Agent-based modelling)
+   + R/python
 
 
 \tiny Grow, A and  Van Bavel, J. 2018. Agent-Based Modeling of Family Formation and Dissolution. In R. Schoen (Ed.), Analytical Family Demography (pp. 125-156). Springer Series on Demographic Methods and Population Analysis, (Vol. 47), Cham: Springer International Publishing. 
@@ -44,15 +48,15 @@ library(tidyverse); library(knitr)
 
 ## Creating digital populations
 
-- A stochastic microsimulation platform, 1970s at UC Berkeley
+- A stochastic micro-simulation platform, 1970s at UC Berkeley
 - Starting with an initial population, applies age-specific demographic rates
 - Creates kinship structure similar to a full genealogy
-- Now mantained at the MPIDR!
+- Now maintained at the MPIDR!
 
 
-\tiny Mason, C. (2016). SOCSIM Oversimplified. UC Berkley. https://lab.demog.berkeley.edu/socsim/CurrentDocs/socsimOversimplified.pdf
+\tiny Mason, C. (2016). SOCSIM Oversimplified. UC Berkeley. https://lab.demog.berkeley.edu/socsim/CurrentDocs/socsimOversimplified.pdf
 
-## A SOCSIM microsimulation of Sweden (1603-2160)
+## A SOCSIM micro-simulation of Sweden (1603-2160)
 
 ``` {r, include = T, warning = F, message = F, echo=T}
 
@@ -78,13 +82,12 @@ read.csv("../../Assignment/Data/sweden_socsim.csv") %>%
 - RQ: estimate and project probabilities of orphanhood and evolution of kinship structure in Zimbabwe in context of HIV/AIDS epidemic (1980-2050)
 - Data: SOCSIM, with rates from UN WPP, Demographic and Health Surveys, World Fertility and Marriage Database, UN HIV infection rates
 - Findings: 
-   + quantitative assessment of th
    + increase in double orphans with no living grandparents
    + shift of responsibilities to aunts and uncles
 
 \tiny{Zagheni, E. 2011. The impact of the HIV/AIDS epidemic on kinship resources for orphans in Zimbabwe, Population and Development Review 74(4), 761-783.}
 
-## Double-orhpans and wouble-orhpans without granparents
+## Double-orphans and double-orphans without grandparents
 
 ![](resources/zagheni_orphans.PNG){width=350px}
 
@@ -114,11 +117,32 @@ read.csv("../../Assignment/Data/sweden_socsim.csv") %>%
 
 \tiny Verdery, A.M. and Margolis, R. (2017). Projections of white and black older adults without living kin in the United States, 2015 to 2060. Proceedings of the National Academy of Sciences 114(42):11109–11114.
 
+## Data sources
+
+![](resources/verdery_sources.PNG){width=250px}
+
+## Sanity checks: comparing to ground-truth
+
+![](resources/verdery_rates.PNG){width=350px}
+
+Key rates, historical and projected changes over time and simulated outcomes, 1880-
+2060.
+
+\tiny Verdery, A.M. and Margolis, R. (2017). SI Appendix. Projections of white and black older adults without living kin in the United States, 2015 to 2060. Proceedings of the National Academy of Sciences 114(42):11109–11114.
+
 ## Kinlesness by gender and ethnicity in the US
 
 ![](resources/verdery.PNG){width=350px}
 
 \tiny Verdery, A.M. and Margolis, R. (2017). Projections of white and black older adults without living kin in the United States, 2015 to 2060. Proceedings of the National Academy of Sciences 114(42):11109–11114.
+
+## Beyond description: looking at mechanisms
+
+![](resources/verdery_mechanisms.PNG){width=350px}
+
+\tiny Verdery, A.M. and Margolis, R. (2017). Projections of white and black older adults without living kin in the United States, 2015 to 2060. Proceedings of the National Academy of Sciences 114(42):11109–11114.
+
+
 
 # Discussion
 
@@ -127,7 +151,7 @@ read.csv("../../Assignment/Data/sweden_socsim.csv") %>%
 - Impact of the HIV/AIDS epidemic
    + Pro: No alternative data source
    + Pro: accounts for clustering of mortality
-   + Con: comparisson to ground-truth?
+   + Con: comparison to ground-truth?
    + Con: high uncertainty of projected rates used as input in this context
   
 
@@ -135,19 +159,19 @@ read.csv("../../Assignment/Data/sweden_socsim.csv") %>%
    + Pro: Projection based on real rates
    + Pro: unpacks demographic dynamics leading to outcome
    + Con: model assumptions about marriage market
-   + Con: comparisson to ground-truth?
+   + Con: comparison to ground-truth?
    + Con: does not account for future mortality shocks
 
 ## When should we use real and simulated populations?
 
 - Use real data whenever possible
 - Improve the interval validity of simulations
-   + Callibration
+   + Calibration
    + Methodological triangulation
    + Comparing simulations to ground-truth
    
 
-## A quick example of such a comparisson
+## A quick example of such a comparison
 
 - Cumulative number of child deaths for a woman surviving to a given age
    + Estimate from SOCISM-generated genealogy
@@ -157,9 +181,27 @@ read.csv("../../Assignment/Data/sweden_socsim.csv") %>%
 \underbrace{CD_{(a,c, p)}}_{\text{Child deaths}}= \underbrace{\sum_{x=15}^{x=a} {_1F_{(x,c,p)}}}_{\text{Children born}}-\underbrace{\sum_{x=15}^{x=a} {_1F_{(x,c,p)}} l_{(a-x,c+x,p)}}_{\text{Children surviving or } CS_{(a,c,p)} }
 \end{equation}
 
-## Methological triangulation: model and formal estimates
+## Ethological triangulation: model and formal estimates
 
-![Expected number of child deaths in Sweden](resources/comparative){width=350px}
+![Expected number of child deaths](resources/child_loss_decade){width=350px}
+
+## More validation: Compare to 'gold-standard' data
+
+![Expected number of child deaths](resources/comparative){width=350px}
+
+## Another example: sandwichness
+
+- 'Sandwiched' between having a young child and a parent close to death
+- Double care responsibility
+- Change over time
+
+\begin{equation*}
+S(a,c) = \underbrace{  (1 -  \prod_{x=1}^{5} 1 - F_{a-x,c} )      }_{\substack{   \text{Prob. of having given}\\ \text{birth in 5 preceding years}}   } \times \underbrace{M_{a, c}}_{\substack{\text{P. mother}\\ \text{is alive}}} \times  \underbrace{(1-  \frac{M_{a+5, c}}{M_{a, c}})}_{\substack{\text{Prob. that mother}\\ \text{dies within 5 years}}} 
+\end{equation*}
+
+## Comparing model and simulated estimates
+
+![Expected number of child deaths in the USA](resources/sandwich_comparative_USA){width=350px}
 
 ## Wrapping up
 

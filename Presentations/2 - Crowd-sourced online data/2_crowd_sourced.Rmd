@@ -24,7 +24,7 @@ output:
 
 - Download the course materials
 - Knit an Rmarkdown document
-- Review the assignement instructions
+- Review the assignment instructions
 - Other?
 
 # Crowd-sourced data
@@ -34,7 +34,7 @@ output:
 - 'Bottom-up' user-generated content
 - Usually large
 - Available online - may have been produced offline
-- By-product of decentralised activity
+- By-product of decentralized activity
 
 ## Examples in this session
 
@@ -54,14 +54,14 @@ output:
 \tiny Antoun, C., Zhang, C., Conrad, F.G., and Schober, M.F. (2016). Comparisons of online recruitment strategies for convenience samples: Craigslist, Google AdWords, Facebook, and Amazon Mechanical Turk. Field Methods 28(3):231–246.
 
 
-## Crowd-sourcing as recruitment: representativeness
+## Crowd-sourcing as recruitment: representatives
 
 ![By sex](resources/crowd1.PNG){width=350px}
 
 \tiny Antoun, C., Zhang, C., Conrad, F.G., and Schober, M.F. (2016). Comparisons of online recruitment strategies for convenience samples: Craigslist, Google AdWords, Facebook, and Amazon Mechanical Turk. Field Methods 28(3):231–246.
 
 
-## Crowd-sourcing as recruitment: representativeness
+## Crowd-sourcing as recruitment: representatives
 
 ![By age group](resources/crowd2.PNG){width=350px}
 
@@ -152,7 +152,7 @@ output:
 
 \tiny Diego Alburez-Gutierrez and Samin Aref (2020)
 
-## Exploring Famlinx
+## Exploring Familinx
 
 ``` {r, include = T, warning = F, message = F}
 

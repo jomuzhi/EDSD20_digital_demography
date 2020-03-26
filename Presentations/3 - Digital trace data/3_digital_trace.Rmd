@@ -27,7 +27,7 @@ library(tufte)
 
 ## Q&A
 
-- Questions about on `Exercise 1` from the final assignement 
+- Questions about on `Exercise 1` from the final assignment 
 - Issues with Familinx data
 - Other?
 
@@ -48,7 +48,7 @@ library(tufte)
    + Google Trends
    + Email, IP address, mobile phones
 - Internet of Things
-   + Activity trackers and wearables medical devices
+   + Activity trackers and wearable medical devices
    + Wearable sensors (see Cito Cattuto)
 
 ## Facebook marketing platforms and APIs
