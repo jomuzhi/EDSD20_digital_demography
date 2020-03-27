@@ -171,6 +171,26 @@ Key rates, historical and projected changes over time and simulated outcomes, 18
    + Comparing simulations to ground-truth
    
 
+## A SOCSIM micro-simulation of Sweden (1603-2160)
+
+``` {r, include = T, warning = F, message = F, echo=T}
+
+# Read sample Familinx data using data.table
+read.csv("../../Assignment/Data/sweden_socsim.csv") %>% 
+  slice(1:4) %>% 
+  kable()
+
+```
+
+## Where did this SOCSIM simulation come from?
+
+1. Initial population
+1. Age-speficid fertility rates
+1. Age-speficid mortality rates
+1. Marriage transition rates
+1. Model for marriage market
+1. Other parameters (inheritance of fertility, etc.)
+
 ## A quick example of such a comparison
 
 - Cumulative number of child deaths for a woman surviving to a given age
@@ -181,7 +201,7 @@ Key rates, historical and projected changes over time and simulated outcomes, 18
 \underbrace{CD_{(a,c, p)}}_{\text{Child deaths}}= \underbrace{\sum_{x=15}^{x=a} {_1F_{(x,c,p)}}}_{\text{Children born}}-\underbrace{\sum_{x=15}^{x=a} {_1F_{(x,c,p)}} l_{(a-x,c+x,p)}}_{\text{Children surviving or } CS_{(a,c,p)} }
 \end{equation}
 
-## Ethological triangulation: model and formal estimates
+## Methodological triangulation: model and formal estimates
 
 ![Expected number of child deaths](resources/child_loss_decade){width=350px}
 
@@ -205,6 +225,6 @@ S(a,c) = \underbrace{  (1 -  \prod_{x=1}^{5} 1 - F_{a-x,c} )      }_{\substack{ 
 
 ## Wrapping up
 
-- How does this relate to your interests?
 - Final thoughts?
-- Project ideas?
+- Brainstorming on project ideas?
+- How does all of this relate to your interests?
