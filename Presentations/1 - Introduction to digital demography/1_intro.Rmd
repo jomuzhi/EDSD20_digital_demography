@@ -44,7 +44,7 @@ options(tinytex.verbose = TRUE)
 ## Technical setup
 
 - Online lectures 
-   + Add me in Skype: diego.alburez
+   + EDSD Skype group (I'm diego.alburez)
    + Online office hours
 - Course materials (syllabus, presentations, readings, assignment)
    + https://github.com/alburezg/EDSD20_digital_demography
@@ -99,7 +99,7 @@ Assignments due Friday April 3 at midnight (CET):
 1. Simulations (made-up data)
 
 
-## 'Big data' is not new data
+## Is 'Big data' new data?
 
 ![Demographer collecting Big Data for the 1925 US census](resources/census.jpg){width=250px}
 
