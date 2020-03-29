@@ -105,6 +105,25 @@ Assignments due Friday April 3 at midnight (CET):
 
 \tiny https://commons.wikimedia.org/wiki/File:Volkstelling_1925_Census.jpg   
 
+## Big data for social research: the good
+
+- big
+- always-on
+- nonreactive
+
+\tiny Salganik, M. (n.d.). Bit by Bit: Social Research in the Digital Age. Princeton, NJ: Princeton University Press.
+
+## Big data for social research: the bad
+
+- incomplete
+- inaccessible
+- nonrepresentative (within- and out-of sample)
+- drifting (population, behavioural, system)
+- algorithmically confounded (observing a casino)
+- inaccessible
+- dirty
+- sensitive
+
 
 ## Pioneering work
 
