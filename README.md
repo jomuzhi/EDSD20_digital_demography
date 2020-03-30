@@ -7,6 +7,13 @@ In this repo you will find all the materials needed to complete this week's cour
 All lectures will be on Skype, on the EDSD group. Students are expected to attend all sessions remotely. 
 Please get in touch with the course conveyor in advance if you anticipate issues with this.
 
+## Watch a replay online!
+
+[Session 1 - Introduction to Digital Demography](https://youtu.be/EuzTgh-1b38) (30 Mar 2020)
+Session 2 - Crowd-sourced online data (31 Mar 2020)
+Session 3 - Crowd-sourced online data (01 Apr 2020)
+Session 4 - 4 - Computational approaches (02 Apr 2020)
+
 Best of luck!
 
 *Diego Alburez*  

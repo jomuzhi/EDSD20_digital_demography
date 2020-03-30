@@ -52,6 +52,12 @@ Focusing on people born between 1750 and 1850, consider the following: how has l
 
 1. Compute the lifespan average by birth cohort and sex. For this exercise, I recommend you group birth cohorts by 15 years (e.g. 1750-1774; 1775-1799; etc.).
 
+```{r}
+
+head(prof)
+
+```
+
 2. Include a short description of your findings (max 200 words) and one figure that summarises them.
 
 
