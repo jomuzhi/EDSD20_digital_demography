@@ -23,4 +23,4 @@ Session 2 - Crowd-sourced online data (31 Mar 2020)
 
 Session 3 - Crowd-sourced online data (01 Apr 2020)
 
-Session 4 - 4 - Computational approaches (02 Apr 2020)
+Session 4 - Computational approaches (02 Apr 2020)
