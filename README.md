@@ -12,4 +12,4 @@ Best of luck!
 *Diego Alburez*  
 Research Scientist at the Laboratory of Digital and Computational Demography  
 Max Planck Institute for Demographic Research  
-Instructor at the **European Doctoral School of Demography (Barcelona, 2020)**
+Instructor at the [European Doctoral School of Demography](https://ced.uab.cat/en/courses/edsd/) (Barcelona, 2019-2020)
