@@ -43,6 +43,10 @@ output:
 1. Knowledge building in Wikipedia
 1. Family history research
 
+## The issue of representation
+
+![Why so many men?](resources/pyramid.PNG){width=350px}
+
 ## Crowd-sourcing as recruitment
 
 **Aim**: Strategies for recruiting iPhone users to participate in a web survey through Craigslist, Google AdWords, Facebook, and Amazon Mechanical Turk.
@@ -53,8 +57,44 @@ output:
 
 \tiny Antoun, C., Zhang, C., Conrad, F.G., and Schober, M.F. (2016). Comparisons of online recruitment strategies for convenience samples: Craigslist, Google AdWords, Facebook, and Amazon Mechanical Turk. Field Methods 28(3):231–246.
 
+## Question time!
 
-## Crowd-sourcing as recruitment: representatives
+![](resources/light.png){width=40px}
+
+1. Which challenges do you foresee when crowd-sourcing data?
+
+## Question time!
+
+![](resources/light.png){width=40px}
+
+1. How can crowd-sourcing systematically bias the data collection?
+
+## Question time!
+
+![](resources/light.png){width=40px}
+
+1. How can crowd-sourcing systematically bias the data collection?
+1. What are the privacy considerations?
+
+
+## Some magic sampling...
+
+![](resources/ball.png){width=30px}
+
+```{r}
+n <- c("Anna", "Lara", "Ilgi", "Octavio", "Qi", "Luca"
+       , "Miguel", "Madalina", "Margherita", "Niall"
+       , "Momoko", "Alexander", "Rustam", 
+       "Serena", "Daniel", "Andres", "Heiner")
+
+set.seed(42)
+who <- sample(n, 3, replace = F)
+n <- n[!n %in% who]
+print(who)
+
+```
+
+## Crowd-sourcing as recruitment: representativeness
 
 ![By sex](resources/crowd1.PNG){width=350px}
 
@@ -67,18 +107,65 @@ output:
 
 \tiny Antoun, C., Zhang, C., Conrad, F.G., and Schober, M.F. (2016). Comparisons of online recruitment strategies for convenience samples: Craigslist, Google AdWords, Facebook, and Amazon Mechanical Turk. Field Methods 28(3):231–246.
 
+## An example closer to home
+
+![Learning more about the coronavirus](resources/health.PNG){width=350px}
+
+Visit and like: https://www.facebook.com/Health-Behavior-Survey-106662670948465/!
+
+## A different strategy: post-stratification
+
+![Different demographics](resources/poll.PNG){width=400px}
+
+\tiny Wang, Rothschild, Goel, and Gelman 2015. Forecasting elections with non-representative polls. International Journal of Forecasting, 31 (3).
+
+## Forecasting with non-representative polls
+
+![Likelihood of Obama victory](resources/poll2.PNG){width=400px}
+
+\tiny Wang, Rothschild, Goel, and Gelman 2015. Forecasting elections with non-representative polls. International Journal of Forecasting, 31 (3).
+
 ## Extrapolating from Wikipedia
 
 ![Predicting movie revenues by editor's activity](resources/taha1.PNG){width=350px}
 
 \tiny Mestyán, M., Yasseri, T., and Kertész, J. (2013). Early Prediction of Movie Box Office Success Based on Wikipedia Activity Big Data. PLoS ONE 8(8):e71226.
 
+## A healthy dose of skepticism
+
+> It’s Difficult to Make Predictions, Especially About the Future
 
 ## Understand crowd-source directed behaviour
 
 ![Cumulative number of signatures in two online petitions in the UK](resources/taha2.PNG){width=350px}
 
 \tiny Yasseri, T., Hale, S.A., and Margetts, H.Z. (2017). Rapid rise and decay in petition signing. EPJ Data Science 6(1):20.
+
+## Petition to improve coverage of Covid-19 tests in LATAM
+
+![Please sign! http://tinyurl.com/vp8ukpj](resources/sign.png){width=300px}
+
+## Question time!
+
+![](resources/light.png){width=40px}
+
+Think about a way in which you could use crowd-sourcing in your own research.
+
+1. Which platform would you use?
+1. Which challenges do you foresee?
+1. Special measures to protect privacy?
+
+## Some magic sampling...
+
+![](resources/ball.png){width=30px}
+
+```{r}
+
+who <- sample(n, 3, replace = F)
+n <- n[!n %in% who]
+print(who)
+
+```
 
 # Online genealogies
 
@@ -134,6 +221,30 @@ output:
 
 \tiny Diego Alburez-Gutierrez (2020)
 
+## Male bias in online genealogies (Familinx)
+
+![Why so many men (again)?](resources/sex_ratio_comparative){width=350px}
+
+## Question time!
+
+![](resources/light.png){width=40px}
+
+1. Why are there so many men?
+1. Can we fix this?
+1. What data would we need?
+
+## Some magic sampling...
+
+![](resources/ball.png){width=30px}
+
+```{r}
+
+who <- sample(n, 3, replace = F)
+n <- n[!n %in% who]
+print(who)
+
+```
+
 ## The data generating process
 
 ![Power law function of genealogists](resources/profiles_created){width=350px}
@@ -172,10 +283,6 @@ fread("../../Assignment/Data/sweden_genealogy.csv") %>%
 ![Birth events in Sweden over time](resources/birth_map_swe){width=250px}
 
 \tiny Diego Alburez-Gutierrez (2020)
-
-## Male bias in online genealogies (Familinx)
-
-![Why so many men](resources/sex_ratio_comparative){width=350px}
 
 ## Correcting bias: an example using post-stratification weights
 
