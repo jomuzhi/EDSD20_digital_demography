@@ -62,17 +62,6 @@ output:
 ![](resources/light.png){width=40px}
 
 1. Which challenges do you foresee when crowd-sourcing data?
-
-## Question time!
-
-![](resources/light.png){width=40px}
-
-1. How can crowd-sourcing systematically bias the data collection?
-
-## Question time!
-
-![](resources/light.png){width=40px}
-
 1. How can crowd-sourcing systematically bias the data collection?
 1. What are the privacy considerations?
 

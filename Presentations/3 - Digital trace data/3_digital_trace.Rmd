@@ -15,6 +15,8 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tufte)
+library(knitr)
+library(dplyr)
 ```
 
 ## Agenda
@@ -40,14 +42,30 @@ library(tufte)
 
 ## Some data sources
 
-- Marketing platforms
+1. Marketing platforms
    + Facebook/Instagram/WhatsApp API
    + Linkedin API
-- Online platforms and communication
+
+## Some data sources
+
+1. Marketing platforms
+   + Facebook/Instagram/WhatsApp API
+   + Linkedin API
+1. Online platforms and communication
    + Twitter (API)
    + Google Trends
    + Email, IP address, mobile phones
-- Internet of Things
+   
+## Some data sources
+
+1. Marketing platforms
+   + Facebook/Instagram/WhatsApp API
+   + Linkedin API
+1. Online platforms and communication
+   + Twitter (API)
+   + Google Trends
+   + Email, IP address, mobile phones
+1. Internet of Things
    + Activity trackers and wearable medical devices
    + Wearable sensors (see Cito Cattuto)
 
@@ -71,6 +89,65 @@ library(tufte)
 ## Female FB users, aged 18+ in Guatemala City
 
 ![](resources/fb3.png){width=400px}
+
+## Question time!
+
+![](resources/light.png){width=40px}
+
+FB audience estimates are used for micro-targeted advertisment. 
+
+1. What is this micro-targeting and who uses it?
+1. How can it be used for demographic research?
+
+## Some magic sampling...
+
+![](resources/ball.png){width=30px}
+
+```{r}
+n <- c("Octavio", "Miguel", "Madalina", "Margherita", 
+       "Niall", "Rustam", "Serena", "Andres")
+
+set.seed(42)
+who <- sample(n, 3, replace = F)
+n <- n[!n %in% who]
+print(who)
+```
+
+## Some good practices for digital demography
+
+1. Acknowledge non-representativeness
+1. Conduct reality checks: compare to IRL data
+1. Account for drifting (population, system and behavioural)
+1. Remember algorithmic confounding (observing a casino?)
+1. Think of ethics, be transparent and upfront
+
+## Question time (again)!
+
+![](resources/light.png){width=40px}
+
+We'll review two studies. Identify the
+
+1.  **strengths** 
+1.  **weaknesses** 
+
+of their reliance on digital trace data.
+
+## Some magic sampling...
+
+![](resources/ball.png){width=30px}
+
+```{r}
+n <- c("Octavio", "Miguel", "Madalina", "Margherita", 
+       "Niall", "Rustam", "Serena", "Andres")
+
+set.seed(42)
+who <- sample(n, 4, replace = F)
+n <- n[!n %in% who]
+kable( 
+   df <- data.frame(what = c("migration", "gender gap"), who) %>% 
+      arrange(what)
+   )
+```
 
 # Example 1: Migration
 
@@ -128,19 +205,35 @@ $$\frac{ \text{Female to male gender ratio of people with characteristic} }{\tex
 
 # Discussion
 
-## Strengths and weaknesses of digital trace data
+## Question time (refresher)!
 
-- Puerto Rico migration
-   + Pro: Real-time data
-   + Con: No 'ground-truth' data (?)
-   - Con: Non-representative sample based on unknown algorithms
-   + Pro: Difference-in-difference to adjust for bias 
+![](resources/light.png){width=40px}
+
+We'll review two studies. Identify the
+
+1.  **strengths** 
+1.  **weaknesses** 
+
+of their reliance on digital trace data.
+
+
+```{r}
+kable(df)
+```
+
+## Strengths and weaknesses: Puerto Rico migration 
+
+- Pro: Real-time data
+- Con: No 'ground-truth' data (?)
+- Con: Non-representative sample based on unknown algorithms
+- Pro: Difference-in-difference to adjust for bias 
     
-- Digital gender gap
-   + Pro: Nowcasting (https://www.digitalgendergaps.org/data/?report=2020-03-02) 
-   + Pro: Ideal data for the job?
-   + Pro: 'Ground-truth' data: Internet Gender Gap Index
-   + Con: Rates are unadjusted - what is the data representative of? 
+## Strengths and weaknesses: Digital gender gap
+
+- Pro: Nowcasting
+- Pro: Ideal data for the job?
+- Pro: 'Ground-truth' data: Internet Gender Gap Index
+- Con: Rates are unadjusted - what is the data representative of? 
 
 ## Challenges going ahead
 
@@ -155,6 +248,13 @@ $$\frac{ \text{Female to male gender ratio of people with characteristic} }{\tex
 
 \tiny Zuboff, S. (2015). Big other: Surveillance capitalism and the prospects of an information civilization. Journal of Information Technology 30(1):75–89.
 
+## Make yourself heard!
+
+![](resources/loud.png){width=40px}
+
+1. What are the main ethical concerns when using digital trace data?
+1. Do all/any apply to digital demographers?
+1. How can we minimise risk for users?
 
 ## Homework
 
