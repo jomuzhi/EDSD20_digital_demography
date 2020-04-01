@@ -40,22 +40,37 @@ library(dplyr)
 - Marketing-led
 - Not collected for social-scientific research
 
-## Some data sources
+## Some data sources (1)
 
-1. Marketing platforms
+- Marketing platforms
    + Facebook/Instagram/WhatsApp API
    + Linkedin API
 
-## Some data sources
+## Some data sources (2)
 
-1. Marketing platforms
-   + Facebook/Instagram/WhatsApp API
-   + Linkedin API
-1. Online platforms and communication
+- Online platforms and communication
    + Twitter (API)
    + Google Trends
    + Email, IP address, mobile phones
+
+## Some data sources (3)
+
+- Internet of Things
+   + Activity trackers and wearable medical devices
+   + Wearable sensors
    
+## A contemporary issue
+
+![](resources/cor.PNG){width=350px}
+   
+\tiny https://www.theguardian.com/world/2020/mar/25/mobile-phone-industry-explores-worldwide-tracking-of-users-coronavirus
+
+## Smart thermometer to track body termperatures
+
+![](resources/term.jpg){width=400px}
+
+\tiny https://twitter.com/ASlavitt/status/1241569790151593986
+
 ## Some data sources
 
 1. Marketing platforms
@@ -67,12 +82,7 @@ library(dplyr)
    + Email, IP address, mobile phones
 1. Internet of Things
    + Activity trackers and wearable medical devices
-   + Wearable sensors (see Cito Cattuto)
-
-## Facebook marketing platforms and APIs
-
-- Sofia Gil’s tutorial: https://github.com/SofiaG1l/Using_Facebook_API
-- For python users, Carol Coimbra's: https://github.com/carolcoimbra/facebook-ads
+   + Wearable sensors
 
 ## Using online marketing tools for demographic research
 
@@ -90,20 +100,28 @@ library(dplyr)
 
 ![](resources/fb3.png){width=400px}
 
+## Facebook marketing platforms and APIs
+
+- GUI vs API (by hand or programmatically)
+- Sofia Gil’s tutorial: https://github.com/SofiaG1l/Using_Facebook_API
+- For python users, Carol Coimbra's: https://github.com/carolcoimbra/facebook-ads
+
 ## Question time!
+
+FB audience estimates are used for **micro-targeted advertisment**. 
+
+- *A marketing strategy that uses digital trace to segment audiences into small groups for content targeting.*
 
 ![](resources/light.png){width=40px}
 
-FB audience estimates are used for micro-targeted advertisment. 
-
-1. What is this micro-targeting and who uses it?
 1. How can it be used for demographic research?
+1. What are the pros and cons of using it?
 
 ## Some magic sampling...
 
 ![](resources/ball.png){width=30px}
 
-```{r}
+```{r, include=T, echo = T}
 n <- c("Octavio", "Miguel", "Madalina", "Margherita", 
        "Niall", "Rustam", "Serena", "Andres")
 
@@ -113,15 +131,16 @@ n <- n[!n %in% who]
 print(who)
 ```
 
-## Some good practices for digital demography
+## Good practices for digital demography
 
 1. Acknowledge non-representativeness
-1. Conduct reality checks: compare to IRL data
-1. Account for drifting (population, system and behavioural)
-1. Remember algorithmic confounding (observing a casino?)
+1. Use IRL data to compare and completment
+1. Account for drifting and algorithmic confounding (observing a casino?)
 1. Think of ethics, be transparent and upfront
 
-## Question time (again)!
+# Example 1: Migration
+
+## Question time!
 
 ![](resources/light.png){width=40px}
 
@@ -136,26 +155,24 @@ of their reliance on digital trace data.
 
 ![](resources/ball.png){width=30px}
 
-```{r}
-n <- c("Octavio", "Miguel", "Madalina", "Margherita", 
-       "Niall", "Rustam", "Serena", "Andres")
+```{r, echo = T}
 
-set.seed(42)
 who <- sample(n, 4, replace = F)
 n <- n[!n %in% who]
-kable( 
-   df <- data.frame(what = c("migration", "gender gap"), who) %>% 
-      arrange(what)
-   )
+df <- data.frame(study=c("migration", "gender gap"),who) %>% 
+      arrange(study)
+kable(df)
 ```
-
-# Example 1: Migration
 
 ## Research at a glance
 
 - RQ: Estimate out-migration from Puerto Rico in the months after 2017 Hurricane Maria
 - Data: FB advertising platform and American Community Survey (ACS)
-- Findings: Flows by age, sex, and US State
+- Findings: 
+   + Oct 2017 to Jan 2018: 17.0% increase in Puerto Rican migrants  (185K people)
+   + Jan to March 2018: 1.8% decrease (return migration)
+   + Flows by age, sex, and US State
+   
 
 \tiny Alexander, M., Polimis, K. and Zagheni, E. (2019), The Impact of Hurricane Maria on Out‐migration from Puerto Rico: Evidence from Facebook Data. Population and Development Review, 45: 617-630.
 
@@ -190,7 +207,7 @@ kable(
 $$\frac{ \text{Female to male gender ratio of people with characteristic} }{\text{Female to Male gender ratio of the population }}$$
 
 - Findings: 
-   + Facebook-based measure performed well compared to ground truth
+   + FB measure explained 69% of ground-truth variance
    + Online+offline measure: best estimates
 
 
@@ -217,23 +234,25 @@ We'll review two studies. Identify the
 of their reliance on digital trace data.
 
 
-```{r}
+```{r, echo = T}
 kable(df)
 ```
 
 ## Strengths and weaknesses: Puerto Rico migration 
 
-- Pro: Real-time data
 - Con: No 'ground-truth' data (?)
-- Con: Non-representative sample based on unknown algorithms
-- Pro: Difference-in-difference to adjust for bias 
-    
+- Con: Non-representative sample
+- Con: Algorithmic drifting
+- Pro: Real-time data (no delay as in official data)
+- Adjust for bias: Difference-in-difference to 
+
 ## Strengths and weaknesses: Digital gender gap
 
-- Pro: Nowcasting
-- Pro: Ideal data for the job?
+- Pro: Nowcasting at sub-national level
+- Con: Non-representative
 - Pro: 'Ground-truth' data: Internet Gender Gap Index
-- Con: Rates are unadjusted - what is the data representative of? 
+- Con: No data for China (FB penetratio: 0.2%)
+- Adjust for bias: correction factor (internet penetration)
 
 ## Challenges going ahead
 
