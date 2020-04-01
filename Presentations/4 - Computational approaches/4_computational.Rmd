@@ -46,7 +46,7 @@ library(tidyverse); library(knitr)
 \tiny Grow, A and  Van Bavel, J. 2018. Agent-Based Modeling of Family Formation and Dissolution. In R. Schoen (Ed.), Analytical Family Demography (pp. 125-156). Springer Series on Demographic Methods and Population Analysis, (Vol. 47), Cham: Springer International Publishing. 
 
 
-## Creating digital populations
+## Creating digital populations with SOCSIM
 
 - A stochastic micro-simulation platform, 1970s at UC Berkeley
 - Starting with an initial population, applies age-specific demographic rates
@@ -55,6 +55,10 @@ library(tidyverse); library(knitr)
 
 
 \tiny Mason, C. (2016). SOCSIM Oversimplified. UC Berkeley. https://lab.demog.berkeley.edu/socsim/CurrentDocs/socsimOversimplified.pdf
+
+## SOCSIM
+
+![What microsimulation actually looks like](resources/socsim.PNG){width=300px}
 
 ## A SOCSIM micro-simulation of Sweden (1603-2160)
 
@@ -74,6 +78,40 @@ read.csv("../../Assignment/Data/sweden_socsim.csv") %>%
 ![Frequency of different types of kin death, Sweden (SOCSIM)](resources/type_kin_death){width=300px}
 
 \tiny Zagheni, E. 2017. The Demographic Foundations of the Lived Experience of Kin Death. Working paper.
+
+## Question time!
+
+![](resources/light.png){width=40px}
+
+We'll review two studies. Identify the
+
+1.  **strengths** 
+1.  **weaknesses** 
+
+of their reliance on microsimulation
+
+```{r, echo = F}
+n <- c("Anna", "Lara", "Ilgi", "Octavio", "Qi", "Luca"
+       , "Miguel", "Madalina", "Margherita", "Niall"
+       , "Momoko", "Alexander", "Rustam", 
+       "Serena", "Daniel", "Andres", "Heiner")
+
+set.seed(43)
+
+```
+
+## Some magic sampling...
+
+![](resources/ball.png){width=30px}
+
+```{r, echo = T}
+
+who <- sample(n, 4, replace = F)
+n <- n[!n %in% who]
+df <- data.frame(study=c("Zimbabwe", "Kinless"),who) %>% 
+      arrange(study)
+kable(df)
+```
 
 # Example 1: Impact of the HIV/AIDS epidemic on kinship resources
 
@@ -146,21 +184,37 @@ Key rates, historical and projected changes over time and simulated outcomes, 18
 
 # Discussion
 
-## Strengths and weaknesses of simulated data
+## Question time (refresher)!
 
-- Impact of the HIV/AIDS epidemic
-   + Pro: No alternative data source
-   + Pro: accounts for clustering of mortality
-   + Con: comparison to ground-truth?
-   + Con: high uncertainty of projected rates used as input in this context
+![](resources/light.png){width=40px}
+
+We'll review two studies. Identify the
+
+1.  **strengths** 
+1.  **weaknesses** 
+
+of their reliance on microsimulation
+
+
+```{r, echo = T}
+kable(df)
+```
+
+## Impact of the HIV/AIDS epidemic
+
+- Pro: No alternative data source
+- Pro: accounts for clustering of mortality
+- Con: comparison to ground-truth?
+- Con: high uncertainty of projected rates used as input in this context
   
+  
+## Projecting older adults without kin
 
-- Projecting older adults without kin
-   + Pro: Projection based on real rates
-   + Pro: unpacks demographic dynamics leading to outcome
-   + Con: model assumptions about marriage market
-   + Con: comparison to ground-truth?
-   + Con: does not account for future mortality shocks
+- Pro: Projection based on real rates
+- Pro: unpacks demographic dynamics leading to outcome
+- Con: model assumptions about marriage market
+- Con: comparison to ground-truth?
+- Con: does not account for future mortality shocks
 
 ## When should we use real and simulated populations?
 
@@ -223,8 +277,10 @@ S(a,c) = \underbrace{  (1 -  \prod_{x=1}^{5} 1 - F_{a-x,c} )      }_{\substack{ 
 
 ![Expected number of child deaths in the USA](resources/sandwich_comparative_USA){width=350px}
 
-## Wrapping up
+## Make yourself heard!
 
-- Final thoughts?
-- Brainstorming on project ideas?
-- How does all of this relate to your interests?
+![](resources/loud.png){width=40px}
+
+1. Brainstorming on project ideas?
+1. How does all of this relate to your interests?
+1. Final thoughts?
