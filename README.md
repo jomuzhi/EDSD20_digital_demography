@@ -21,6 +21,6 @@ Instructor at the [European Doctoral School of Demography](https://ced.uab.cat/e
 
 [Session 2 - Crowd-sourced online data](https://youtu.be/UADCQvzXb4U) (31 Mar 2020)
 
-Session 3 - Crowd-sourced online data (01 Apr 2020)
+[Session 3 - Crowd-sourced online data[(https://youtu.be/gY12RkPESeY) (01 Apr 2020)
 
 Session 4 - Computational approaches (02 Apr 2020)
