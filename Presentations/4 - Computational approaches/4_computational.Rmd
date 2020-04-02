@@ -24,6 +24,7 @@ library(tidyverse); library(knitr)
 1. Example 1: Impact of the HIV/AIDS epidemic on kinship resources
 1. Example 2: Projecting older adults without kin
 1. Discussion
+1. Course evaluation
 
 ## Q&A
 
@@ -73,12 +74,6 @@ read.csv("../../Assignment/Data/sweden_socsim.csv") %>%
 
 \tiny Zagheni, E. 2017. The Demographic Foundations of the Lived Experience of Kin Death. Working paper.
 
-## Historical and projected demographic processes
-
-![Frequency of different types of kin death, Sweden (SOCSIM)](resources/type_kin_death){width=300px}
-
-\tiny Zagheni, E. 2017. The Demographic Foundations of the Lived Experience of Kin Death. Working paper.
-
 ## Question time!
 
 ![](resources/light.png){width=40px}
@@ -109,7 +104,7 @@ set.seed(43)
 who <- sample(n, 4, replace = F)
 n <- n[!n %in% who]
 df <- data.frame(study=c("Zimbabwe", "Kinless"),who) %>% 
-      arrange(study)
+      arrange(desc(study))
 kable(df)
 ```
 
@@ -147,11 +142,11 @@ kable(df)
 
 ## Research at a glance
 
-- RQ: Examine the changing population of kinless individuals in American society over the coming decades
+- RQ: Examine the changing population of kinless individuals in US society over the coming decades
 - Data: Rates from US census, Human Fertility Database, official statistics 
 - Findings:  
-   + impending increase of kinless older adults, especially amongst Black
-   +  Declines in marriage, one-child families, mortality
+   + Increase of adults 50+ with no living close family members, especially Black
+   + Mechanisms: Declines in marriage, one-child families, mortality
 
 \tiny Verdery, A.M. and Margolis, R. (2017). Projections of white and black older adults without living kin in the United States, 2015 to 2060. Proceedings of the National Academy of Sciences 114(42):11109–11114.
 
@@ -210,11 +205,15 @@ kable(df)
   
 ## Projecting older adults without kin
 
-- Pro: Projection based on real rates
 - Pro: unpacks demographic dynamics leading to outcome
 - Con: model assumptions about marriage market
-- Con: comparison to ground-truth?
-- Con: does not account for future mortality shocks
+- Pro: different divorce and marital rate trajectories
+- Pro: comparison to ground-truth?
+- Con: cannot account for future mortality shocks
+
+## Comparing to ground truth
+
+![](resources/comr.PNG){width=400px}
 
 ## When should we use real and simulated populations?
 
@@ -284,3 +283,16 @@ S(a,c) = \underbrace{  (1 -  \prod_{x=1}^{5} 1 - F_{a-x,c} )      }_{\substack{ 
 1. Brainstorming on project ideas?
 1. How does all of this relate to your interests?
 1. Final thoughts?
+
+## Evaluation time
+
+![](resources/med.png){width=40px}
+
+1. Course evaluation in Moodle 
+1. Mini-survey on online teaching (via email)
+
+## Historical and projected demographic processes
+
+![Frequency of different types of kin death, Sweden (SOCSIM)](resources/type_kin_death){width=300px}
+
+\tiny Zagheni, E. 2017. The Demographic Foundations of the Lived Experience of Kin Death. Working paper.
