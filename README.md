@@ -22,15 +22,7 @@ All lectures will be on Skype, on the EDSD group. Students are expected to atten
 Please get in touch with the course conveyor in advance if you anticipate issues with this.
 
 
-
-Best of luck!
-
-[Diego Alburez-Gutierrez](https://www.demogr.mpg.de/en/about_us_6113/staff_directory_1899/diego_alburez_gutierrez_3783)  
-Research Scientist at the Laboratory of Digital and Computational Demography  
-Max Planck Institute for Demographic Research  
-Instructor at the [European Doctoral School of Demography](https://ced.uab.cat/en/courses/edsd/) (Barcelona, 2019-2020)
-
-[Edit 03 Apr 2020:] Now you can *watch a replay of the lectures* online:
+**[Edit 03 Apr 2020:] Now you can watch a replay of the lectures online**:
 
 [Session 1 - Introduction to Digital Demography](https://youtu.be/EuzTgh-1b38) (30 Mar 2020)
 
@@ -39,3 +31,10 @@ Instructor at the [European Doctoral School of Demography](https://ced.uab.cat/e
 [Session 3 - Crowd-sourced online data](https://youtu.be/gY12RkPESeY) (01 Apr 2020)
 
 [Session 4 - Computational approaches](https://youtu.be/b8s7XFxCEzw) (02 Apr 2020)
+
+Best of luck!
+
+[Diego Alburez-Gutierrez](https://www.demogr.mpg.de/en/about_us_6113/staff_directory_1899/diego_alburez_gutierrez_3783)  
+Research Scientist at the Laboratory of Digital and Computational Demography  
+Max Planck Institute for Demographic Research  
+Instructor at the [European Doctoral School of Demography](https://ced.uab.cat/en/courses/edsd/) (Barcelona, 2019-2020)
