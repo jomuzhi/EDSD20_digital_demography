@@ -16,7 +16,6 @@ We  will  discuss  a  number  of  substantive  topics  related  to  the emergenc
 
 3. to induce critical thinking about modern demographic analysis and (online) data-driven discovery
 
-
 ## Online lectures
 
 All lectures will be on Skype, on the EDSD group. Students are expected to attend all sessions remotely. 
@@ -31,8 +30,7 @@ Research Scientist at the Laboratory of Digital and Computational Demography
 Max Planck Institute for Demographic Research  
 Instructor at the [European Doctoral School of Demography](https://ced.uab.cat/en/courses/edsd/) (Barcelona, 2019-2020)
 
-
-## Watch a replay online!
+[Edit 03 Apr 2020:] Now you can *watch a replay of the lectures* online:
 
 [Session 1 - Introduction to Digital Demography](https://youtu.be/EuzTgh-1b38) (30 Mar 2020)
 
